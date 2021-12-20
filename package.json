@@ -1,26 +1,20 @@
 {
-  "name": "weather",
-  "version": "1.0.0",
-  "description": "Consumidor de la API weatherstack.com",
-  "main": "index.js",
+  "name": "proyecto_nodejs",
+  "version": "0.0.1",
+  "description": "Proyecto implementacion clima",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alejf/clima.git"
+    "start": "node app.js"
   },
   "keywords": [
-    "API",
-    "nodeJS",
-    "javascript",
-    "html",
-    "css"
+    "clima"
   ],
   "author": "Edgar Alejandro Jarquin Flores",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alejf/clima/issues"
-  },
-  "homepage": "https://github.com/alejf/clima#readme"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "hbs": "^4.2.0"
+  }
 }

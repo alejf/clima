@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>El clima en tu ciudad -- {{lugar}}</title>
+
+</head>
+  
+<body>
+    <header>
+        <h1>Hoy el clima en {{lugar}} </h1>
+    </header>
+
+    <section class="busqueda">
+        <form action="buscar">
+            
+            <input required="required" type="text" id= "buscar" name="buscar" placeholder="Ingrese la ciudad">
+            <input type="submit" value="Buscar">
+        </form>
+       
+    </section>
+    <br>
+    <div class="icono">
+          <img src="{{imagen}}" alt="{{lugar}}">
+
+    </div> 
+    <div class="clima">
+
+      
+        <p>{{descripcion}}</p>
+        
+        <h4> El clima en {{lugar}},  {{ pais }} tiene una temperatura de {{ temperatura }}ºC y una humedad de {{ humedad}} %</h4>
+        
+    </div>
+
+    <footer>
+         <p>&copy; 2021 Edgar Alejandro Jarquin Flores</p>  
+    </footer>
+
+</body>
+</html>
